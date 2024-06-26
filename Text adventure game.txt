@@ -1,0 +1,88 @@
+Animal one
+- cat
+- bird
+- dog
+find their way home
+- Owner left home, forgot something. It's your duty to bring it to them
+detective style
+- Maybe comedy
+- Find some clues
+
+meet some animals
+
+
+a dog whose owner is very distracted and you have to try get their attention
+
+People could catch you and think you're a stray dog, ending the game
+
+To find some items, you need to fulfill certain requirements
+- Forgot their lunchbox, with different kinds of food there
+- Certain animals may take certain foods, depending on what they like
+	- i.e. mouse takes the thing with cheese
+
+Owner forgot something
+
+Start off
+Showing life at home with the owner
+Owner goes to work
+You realise they left their stuff at home (3 items?)
+You grab them all and set off to their job - Point of no return
+- Where do they work though?
+- Clues at the beginning
+At the beginning of your journey, a dastardley magpie swoops in and steals your things, cackling and spreading out the belongings
+	- Magpie is the final boss?
+	- You find items along the way that prevent it from stealing more things when you get closer to ending the game
+	- Maybe if you drop off an item at the right location, you can avoid an encounter at a later stage because they got distracted
+		- Shiny bauble at a magpie nest
+			- Maybe a different item to not make it so obvious? Something shiny but not explicitly stated
+		- The bauble disappears when you leave the map because the magpie took it
+		- Carrying the bauble means the magpie loses the ability to steal 1 item
+			- "The magpie's claws are full" text comes out
+You set off to find them
+1 path per item
+
+
+Map
+- Can target a particular map you want to go to
+- This creates a path that outlines the buttons you need to press to get there
+	- This seems incredibly hard to program, so maybe not
+	- How to find the shortest path???
+- Instead, maybe make a teleport function that costs time?
+- If I have a large map, I need to make each room worth visiting
+	- Good dialogue
+
+
+
+Ending:
+He called me a good boy anyway. I is happy
+
+
+
+Comedic phrases:
+Egads!
+bark bark
+Inspecting - I'm not sure what you expected?
+
+Mechanics/Features:
+- Inventory
+	- Inventory has a cap
+- History
+- Multiple choices
+- Option to interact with environment
+	- Inspect things around a map
+
+Potential features:
+- Map
+- Time limited
+	- Amount of times you can traverse maps before your owner's lunchtime and he dies from hunger
+		- If you haven't arrived there and the time runs out, you get teleported there and you see them dead already
+	- You can only go back and forth one map each time
+
+
+
+
+Second game
+Dog gets distracted by something
+runs off
+has to find way home
+encounters many things along the way

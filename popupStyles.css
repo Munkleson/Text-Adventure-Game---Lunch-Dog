@@ -1,0 +1,14 @@
+
+#popupDiv {
+    position: absolute;
+    z-index: 100;
+    /* width: fit-content; */
+    height: 300px;
+    top: 90px;
+    left: 20%;
+    right: 20%;
+    border-color: black;
+    border: 2px;
+    border-style: solid;
+    background-color: purple;
+}

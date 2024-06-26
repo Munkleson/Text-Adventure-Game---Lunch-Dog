@@ -1,0 +1,35 @@
+24/06/25
+
+Started designing the game.
+
+The core design was to have it based around an animal's actions during a journey. Decided on doing it with either a cat, dog, or bird. 
+
+The initial thought was dog, and make the game have a plot that would be somewhat like the Disney movie Bolt, where a dog has gotten lost/left behind and would to return to its owner, maybe making it have a bit of a sad tone like Hachiko's tale. However, for a casual game, it would likely be easier for me to construct a story that was more light-hearted in tone, with comedic elements, as it would be better for the average user to relate. Then a few ideas were revolved around, maybe making a cat detective story, kind of like the video game Stray. 
+
+In the end, I decided on doing a dog story, where the owner has left home, forgetting something, and as the dog, it is your duty to bring it to their work so they don't starve. As you set off on your journey, your items are scattered by an external force (decided on a magpie, because as an Australian, they are dastardly evil creatures). You would need to go around to different areas, finding where the individual items are and gather them. Along the way, you can meet different animals that either give you hints, help you, or hinder you.
+
+This was chosen as it would have quite light-hearted tones (as likely you would be a golden retriever, and how can they be anything but) while being able to incorporate detective elements as well into the journey (discovering where the items are and how to avoid different hindrances). A lunchbox ended up being my final thought, as it could organically have different items there.
+
+There were a few ideas floated around as to how to make things meaningful. Initial ideas to go off are currently that you could be caught, with people thinking you are a stray dog so the pound comes to take you, ending the game (and failure).
+
+A real point of concern was to make sure that the game did not get too large in scope that it would be a project I would never be able to finish. At the same time, it would need to be deep enough that anyone could get interested in playing it, and have a gripping story throughout with meaningful choices.
+
+On that point, there would be realistically one real ending, with variances to how that ending should be. Unless you are caught as mentioned before, you will always make it to the owner, but the items you carry will affect the ending somewhat. Getting everything and delivering it should be hard, and I don't want people to be able to get all items on their first, second, or even ever maybe. I wanted some things to not have explicit clues, like the magpie being able to be distracted by shiny things, and you have to drop an item in their nest in order to be able to make it not come at the end to attack you again.
+
+In the end, to make things have meaningful choices, I likely have to implement some timer in order to make it so there is a challenging aspect of it. Rather than a timer timer, it would be more like a map traversal timer, where maybe each map moves the clock forwards 3 minutes, and when it hits lunchtime you would be teleported to your owner and give whatever items you have at that time.
+
+A major thing I would have to think about are basic features, so at least I can start designing the webpage with a UI in mind. Inventory, item/event history chat box/multiple choice option/text box were the basic ideas. I'm also floating around the idea of a map (maybe non-interactive) so you can see how many steps it would take to get somewhere (with the time-limited aspect, maybe needed).
+
+
+
+24/06/26
+
+Started work on some functions for inventory management. Decided on making the inventory itself within a global object literal of inventory management, and add methods to manipulate the inventory within the management object. The inventory would also be an object, with items added having either a value of 0 or 1, depending if you have it or not. Why this instead of an array is that to determine if you had a particular item at any point in the game, you would then need to loop through the array to see if it exists there, while as an object you can just call the key and see if the value is 0 or 1, which by my current understanding would make it more efficient.
+
+I was thinking of whether to make inventory its own global object, and separate the methods of adding, remove, and whatever else into another object, as it would save from having to type inventoryManagement.inventory every time instead of inventory. Not sure yet if grouping them up together is a wholly bad thing though, for clarity.
+
+Update: Not long after writing the above I decided to do it, there is no reason why I would need a global inventory variable named just that for any other variable.
+
+Now I have to think, how many steps do I want to limit the player to? Doing this will determine the scope of the game and make designing some things easier. Also, do I want to make it so tight that you need to hit every single perfect step in order to finish the game with all items? Or make it so making some mistakes can still do it?
+
+Made a random popup window for when you click a button to practice for eventually making popup menus or a map. This would also spawn a button inside where if you click it, the popup goes away. At first I wasn't sure how to make the popup button work as a standalone function, but when I put that function within the function to create the popup, it worked then. I then also tried to make it so pressing 'Esc' would close the popup. I ran into two issues here; 1 was where I wrote for keydown 'Esc' instead of 'Escape', and the other was where I wrote element.addEventListener for this instead of using window.addEventListner. Now I understand that doing the element one would only work if the button itself is in focus, which would never happen unless I disabled the click one as I would need to press it to put it in focus. I also made it so the popup button would create the popup only when there is none active, a simple boolean variable which is modified when it is added and removed.
